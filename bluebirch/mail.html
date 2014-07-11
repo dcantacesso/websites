@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="Your description goes here">
+            <meta name="keywords" content="one, two, three">
+        
+            <title>REQUEST USER ACCESS</title>
+                
+            <!-- external CSS link -->
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/problem.css">
+        </head>
+        
+        <body>
+            <div id="container">
+                <header>
+                    <div id="head"><h1>REQUEST USER ACCESS</h1></div>
+                </header> 
+
+                <form action="mailto:canta29@hotmail.com?Subject=ALERT DEV OPS - User Access Request" method="post" enctype="text/plain">
+
+                    <fieldset>
+                
+                        <legend><h2>ENVIRONMENT INFORMATION</h2></legend>
+                        <span>(Please specify if you would like to have a user added to multiple environments)</span>
+                        
+                        <h3><label for="version">Please add my user to EAGLE Product Version: </label><input type="text" id="version" name="EagleProductVersion" required><span> (required)</span></h3>
+
+                        <h3><label for="operation_system">I would like to be added to the following operating systems (check all that apply): </label></h3>
+                            <h4><input type="checkbox" id="operation_system" name="OperatingSystem" value="Linux"> Linux</h4>
+                            <h4><input type="checkbox" id="operation_system" name="OperatingSystem" value="Solaris"> Solaris</h4>
+                            <h4><input type="checkbox" id="operation_system" name="OperatingSystem" value="Windows"> Windows</h4>
+                        
+
+                        <h3><label for="env_type">I would like to be added to the following environment types (check all that apply): </label></h3>
+                            <h4><input type="checkbox" id="env_type" name="EnvironmentType" value="DEV"> DEV</h4>
+                            <h4><input type="checkbox" id="env_type" name="EnvironmentType" value="QA"> QA</h4>
+                            <h4><input type="checkbox" id="env_type" name="EnvironmentType" value="EARTH"> EARTH</h4>
+                            <h4><input type="checkbox" id="env_type" name="EnvironmentType" value="FARM"> FARM</h4>
+                    
+                        <h3><label for="username">Please create the user account with the following user name: </label><input type="text" id="username" name="RequestUserName" placeholder="example - jsmith" required><span> (required)</span></h3>
+
+                        <h3>Please create the user account with the following passwod </h3>
+                            <h4><input type="radio" name="Password" value="eagle1"> "eagle1"</h4>
+                            <h4><input type="radio" name="Password" value="userSpecified"> Other</h4> 
+                            <h4><label for="userPassword">If other, please enter desired password: </label><input type="text" id="userPassword" name="UserPassword"></h4>
+                    </fieldset>
+
+                
+                <h3><input type="submit" value="Submit"><input type="reset" value="Reset"></h3>
+
+
+            </form>
+
+
+                        <footer>
+                        </footer>
+                </div><!-- #container -->
+
+                        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/main.js"></script>
+
+        </body>
+</html>

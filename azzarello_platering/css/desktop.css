@@ -1,0 +1,621 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+     margin: 22px 0px;
+     padding: 0px;
+     font-size: 16px;
+}
+a:hover, a:link, a:visited, a:active { 
+    text-decoration: none;
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #fff;
+     line-height: 1.4;
+     font-size: 10px;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0px;
+     padding: 0px;
+}
+
+header, nav, img, h1, h2, h3, h4, h5, h6, p, #container{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+h1 {
+     font-family: 'Rock Salt', cursive;
+     font-size: 3em; 
+     font-weight: bold;   
+}
+
+h2 {
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 4em;
+     font-weight: 300;
+}
+h3 {
+     font-size: 14px;
+}
+
+h4 {
+     font-size: 10px;
+}
+h5 {
+     font-family: 'Rock Salt', cursive;
+     font-size: 4em;
+}
+
+h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 1em;
+}
+em {
+     font-size: 1.7em;
+}
+p {
+     font-size: 3em;
+     font-weight: bolder;
+}
+i {
+     padding: 0 .3em
+}
+
+header, nav {
+     float: left;
+     width: 100%;
+}
+
+header {
+     background-color: #b00;
+}
+
+#logo {
+     text-align: center;
+     color: #fff;
+}
+#logo h1 {
+     border-bottom: .1em solid #e00;
+     width: 13em;
+     margin: .5em auto 0; 
+}
+
+nav {
+     background-color: #e00;
+     text-align: center;
+}
+
+nav ul {
+     width: 88em;
+     margin: 0 auto;
+}
+
+nav ul li {
+     display: inline-block;
+     color: #fff;
+     font-size: 3em;
+     margin: 0;
+     padding: .3em 1em;
+}
+
+nav ul li:hover {
+    border: .2em solid transparent;
+    padding: .1em .8em;
+    background-color: #fff;
+    color: #f00;
+    -webkit-border-image:url(../img/flag.png) 30 30 stretch;
+    -o-border-image:url(../img/flag.png) 30 30 stretch;
+    border-image:url(../img/flag.png) 30 30 stretch;
+
+}
+
+#freeQuote {
+     position: absolute;
+     top: 1em;
+     left: 1em;
+}
+
+#emailUs {
+     position: absolute;
+     top: 3em;
+     right: 2em;
+}
+
+#emailUs a {
+     color: #fff;
+     background-color: #f00;
+     font-size: 2em;
+     padding: .5em 1em;
+     border-radius: 4px;
+}
+
+#emailUs a:hover {
+    color: #e00;
+    background-color:#fff;
+}
+
+#slideShow {
+     width: 100%;
+     /*margin: 18.8em 0 0 0;*/
+     padding: 0px;
+}
+
+#slideShow iframe {
+     width: 100%;
+     min-height: 510px;
+     overflow:hidden;
+     border:none;
+     display:block;
+}
+#ssText {
+     width: 80%;
+     position: absolute;
+     top: 38em;
+     left: 10%;
+     text-align: center;
+     padding: 0px;
+}
+#ssText h5 {
+     color: #e00;
+}
+#ssText h6 {
+     color: #fff;
+}
+.est {
+     width: 6em;
+     font-size: 3em;
+     padding: .5em;
+     margin: 0 auto;
+     background-color: #e00;
+     opacity: .6;
+     border-radius: 3em;
+}
+
+#container h2 {
+     font-family: 'Rock Salt', cursive;
+     color: #fff;
+     font-size: 4em;
+     width: 15em;
+     margin: 0 auto;
+     border-bottom: .1em solid #fff;
+}
+
+#container p {
+     color: #fff;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size: 2.5em;
+     font-weight: 300;
+     width: 85%;
+     margin: 1em auto;    
+}
+
+#col1, #col2, #col3 {
+     width: 100%;
+     height: 45em;
+     float: left;
+}
+
+#col1 {
+     background-color: #c00;
+     padding-top: 11em;
+}
+
+#col2 {
+     background-color: #900;
+     padding-top: 13em;
+}
+#col3 {
+     background-color: #400;
+     padding-top: 5em;
+}
+#col3 p {
+     margin: .5em auto;
+}
+#col3 ul {
+     width: 100%;
+}
+
+#col3 li {
+     font-family: 'Open Sans', sans-serif;
+     display: inline;
+     font-size: 1.5em;
+     padding: 0px 10px;
+     list-style-type: none;
+     color: #fff;
+     border-right: 2px solid #fdd;
+}
+
+#col3 li:last-child {
+     border-right: none;
+} 
+
+.hideList1 {
+     display: none;
+}
+
+.hideList2 {
+     display: none;
+}
+
+
+
+#designBy {
+     padding: 0px;
+     margin: 40px 10px 0px;
+     float: right;
+     background-color: #000;
+     width: 100px;   
+}
+
+#designBy img {     
+     width: 64px;
+     float: left;
+
+}
+
+#designBy h3 {
+     margin-top: 40px;
+     float: right;
+}
+
+#photoOne, #photoTwo, #photoThree {
+     width: 100%;
+     height: 640px;
+     float:left;
+}
+
+#photoOne {
+     background: url(../img/photo1.jpg) center center no-repeat;
+     background-size: cover;
+}
+
+#photoTwo {
+     background: url(../img/photo2.jpg) center center no-repeat;
+     background-size: cover;
+}
+
+#photoThree {
+     background: url(../img/photo3.jpg) center center no-repeat;
+     background-size: cover;
+}
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+
+
+
+#contactContainer {
+     height: auto;
+     width: 100%;
+     margin-top: 66px;
+     float: left;
+}
+
+#contactContainer  h1 {
+     font-family: 'Rock Salt', cursive;
+     margin: 20px auto 0px;
+     color: #fff;
+     border-bottom: 2px solid #faa;
+     width: 420px;
+}
+
+#contactContainer p {
+     color: #fff;
+     font-size: 22px;
+     padding: 10px;
+     margin: 10px auto;
+}
+
+#contactContainer em {
+     font-size: 22px;
+     padding: 0px;
+     margin: 0px;   
+     color: #400;
+     font-weight: bolder;
+}
+
+#contactContainer span {
+     font-size: 30px;
+}
+
+#contactImage {
+     background: url(../img/contactBG.jpg) center center no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     top: 66px;
+     opacity: .8;
+     z-index: -1;
+}
+
+#ccContactInfo {
+     width: 80%;
+     margin: 60px 10%;
+     opacity: 1;
+     float: left;
+}
+
+#ccContactInfoBG {
+     background-color: #000;
+     width: 80%;
+     height: 240px;
+     opacity: .2;
+     position: absolute;
+}
+
+#ccContact {
+     text-align: center;
+     background-color: #900;
+     width: 60%;
+     margin: 0px auto;
+     padding: 20px;
+     opacity: .8;
+}
+
+#ccAccountingInfo {
+     width: 80%;
+     margin: 0px 10% 0px;
+     opacity: 1;
+     float: left;
+}
+
+#ccAccountingInfoBG {
+     background-color: #000;
+     width: 80%;
+     height: 168px;
+     opacity: .2;
+     position: absolute;
+}
+
+#ccAccounting {
+     text-align: center;
+     background-color: #900;
+     width: 60%;
+     margin: 0px auto;
+     padding: 20px;
+     opacity: .8;
+}
+#ccMapInfo {
+     width: 80%;
+     margin: 60px 10% 100px;    
+     opacity: 1;
+     float: left;
+}
+
+#ccMapInfoBG {
+     background-color: #000;
+     width: 80%;
+     height: 630px;
+     opacity: .12;
+     position: absolute;
+}
+
+#ccMap {
+     text-align: center;
+     background-color: #900;
+     width: 60%;
+     height: 630px;
+     margin: 0px auto;
+     padding: 20px;
+     opacity: .8;
+}
+
+#ccMap h1 {
+     width: 300px;
+     margin-bottom: 20px;
+}
+
+#ccMap iframe {
+     width: 100%;
+     height: 450px;
+     margin-top: 20px;
+}
+
+#ccMapAddress {
+     background-color: #900;
+     float: right;
+     width: 400px;
+     height: 410px;
+     opacity: .8;
+}
+
+#emailContainer {
+     width: 100%;
+     margin: 66px 0px 0px;
+     height: 1000px;
+     width: 100%;
+}
+
+#emailContainer p {
+     text-align: left;
+     float: left;
+     margin: 0px 10%;
+     padding: 5px 10px;
+     width: 80%;
+     color: #fff;
+     font-size: 1.5em;
+     background-color: #800;
+}
+
+#emailContainer h2 {
+     width: 80%;
+     color: #f00;
+     margin: 20px auto;  
+     background: transparent;
+}
+
+#emailImage {
+     background: url(../img/emailBG.jpg) center center no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     top: 66px;
+     opacity: .8;
+     z-index: -1;
+}
+
+#ecEmailForm {
+     margin: 0px;
+     width: 100%;
+     margin: 0px;
+     padding-top: 30px;
+}
+
+#ecEmailFormBG {
+     background-color: #000;
+     width: 90%;
+     height: 900px;
+     opacity: .12;
+     position: absolute;
+     margin: 20px 5%;
+     z-index: -1;
+}
+
+input, textarea {
+     float: left;
+     width: 80%;
+     font-size: 1.5em;
+     margin: 0px 10% 20px;
+     border: none;
+     padding: 5px 10px;
+}
+
+input {
+     height: 45px;
+}
+
+#submitEmail {
+     width: 160px;
+     font-size: 1em;
+     background-color: #e00;
+     border-radius: 50px;
+     float: right;
+     border: none;
+}
+
+footer {
+     background-color: #000;
+     width: 100%;
+     height: 250px;
+     margin: 0px;
+     padding: 20px 0px 0px;
+     float: left;   
+}
+
+#footerContent {
+     float: left;
+     width: 80%;
+}
+
+#fcLinks {
+     padding: 28px 20px 0px;
+     float: left;
+     width: 25%;
+}
+
+#fcInfo {
+     float:left;
+     text-align: center;
+     margin: 20px auto;
+     width: 75%;
+}
+
+footer em {
+     color: #fff;
+     font-size: 14px;
+}
+
+footer p {
+     color: #fff;
+     font-size: 24px;
+     padding: 0px 0px 20px;
+}
+
+footer span {
+     color: #e00;
+}
+
+footer a {
+     display: block;
+     color: #fff;
+     background-color: #000;
+     font-size: 18px;
+     padding: 20px 15px 0px;
+     margin: 0px;
+     text-decoration: none;
+     text-align: right;
+}
+
+footer img {
+     padding: 0px;
+     margin: 0px;
+     float: right;
+}
+
+footer nav {
+    float: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
+
+
+
+
+
+

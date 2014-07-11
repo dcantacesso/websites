@@ -1,0 +1,400 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1;
+}
+
+p {
+	color: #fff;
+}
+
+.amTest {
+	color: #fff;
+	background-color: #365ac3;
+	padding: 10px;
+}
+
+.btnTest {
+	color: #000;
+	background-color: #fff;
+}
+
+#section0, #section1, #section2, #slide1, #section3, #section4 {
+	width: 100%;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center
+}
+#section0 { background-image: url(../img/home8.jpg); }
+#section1 { background-image: url(../img/boston.jpg); }
+#slide1 { background-image: url(../img/family.jpg); }
+#homeLogo img {
+	position: absolute;
+	top: 0;
+	float: left;
+	width: 480px;
+	margin: 30px 0px 20px 30px;
+	padding: 0px;
+}
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 50px;
+	background: #2f4ea8;
+	opacity: .9;
+	z-index: 100000;
+}	
+#footer h3 {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: 600;
+}
+#homePhone, #homeLocation, #homeFaceBook, #homeTwitter{
+	float: left;
+	height: 35px;
+	padding: 15px 0px 0px 0px;
+	margin: 0px;
+	width: 20%;
+}
+#homeLocation {
+	width: 30%;
+}
+#homeLocation img {
+	float: left;
+	width: 32px;
+	margin: -3px 10px 0px 18px;
+}
+#homePhone img {
+	float: left;
+	width: 14px;
+	margin: -5px 10px 0px 27px;
+}
+#homeFaceBook img {
+	float: left;
+	width: 48px;
+	margin: -10px 5px 0px 10px;
+}
+#homeTwitter img {
+	float: left;
+	width: 48px;
+	margin: -10px 5px 0px 10px;
+}
+#section0 h2 {
+	position: absolute;
+	left: 0;
+	bottom: 4%;
+	height: 60px;
+	color: #fff;
+	margin: 0% 5%;
+	padding: 10px 0px;
+	text-align: center;
+	width: 90%;
+	font-size: 2.7em;
+}
+#serviceContainer {
+	width: 100%;
+	position: absolute;
+	top: 200px;
+	margin: 0px;
+	padding: 0px;
+}
+#serviceContainer h1 {
+		color: #fff;
+		font-weight: 300;
+		font-size: 3em;
+		margin: 0px 0px 20px 30px;
+}
+#serviceContainer h2 {
+		width: 100%;
+		text-align: center;
+		color: #4d6ece;
+		font-size: 2.5em;
+}
+#serviceContainer p {
+	margin: 0px;
+	padding: 0px 20px 20px 20px;
+	font-size: 1.5em;
+	color: #365ac3;
+}
+#serviceContainer img {
+	height: 200px;
+}
+#ourServices {
+	position: absolute;
+	top:0;
+	opacity: .9;
+	background-color: #fff;
+	width: auto;
+	height: 80px;
+	margin: 0;
+	padding: 20px 20px 20px 20px;
+}
+#ourServices img {
+	width: 500px;
+	float: left;
+}
+#ourServices h2 {
+	color: #6884d5;
+	font-size: 3em;
+	float: left;
+	margin: 5px 0px 0px -60px;
+	line-height: .6;
+}
+
+.serviceText {
+	color: #6884d5;
+	font-size: 3em;
+	float: left;
+	margin: 0px;
+	padding: 20px 40px;
+	line-height: 1;
+	width: 25%;
+}
+
+#ourServices span {
+	font-size: .5em;
+	line-height: 0;
+}
+.hidden {
+	display: none;
+}
+#residentialContainer, #commercialContainer, #interiorContainer {
+	float: left;
+	width: 25%;
+	min-height: 300px;
+	margin: 0px 0% 0px 4%;
+	padding: 0px;
+	background-color: #fff;
+	box-shadow: 5px 5px 4px #222;
+}
+#residentialContainer img, #commercialContainer img, #interiorContainer img {
+width: 100%;
+}
+
+#interiorContainer h2 img {
+	float: right;	
+	width: 48px;
+	height: 48px;
+	padding: 0px;
+	margin: -6px 15px 0px -20px;
+}
+#instagramLink {
+	float: left;
+	width: 60%;
+	margin: 0px 20% 20px 20%;
+	background-color: #3F729B;
+	color: #fff;
+}
+#instagramLink img {
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin: 3px 0px 0px 5px;
+	padding: 0px;
+}
+#instagramLink h3 {
+	float: left;
+	padding: 0px 10px 0px 0px;
+}
+#agentFamily, #agentRalph, #agentStacey, #agentDavid {
+	position: absolute;
+	top: 7%;
+	height: 80%;
+	width: 17%;
+	float: left;
+	padding: 20px 0px;
+	margin: 0px 4%;
+	background-color: #fff;
+	opacity: .9;
+}
+#agentFamily {
+	position: absolute;
+	top:0;
+	width: auto;
+	height: 80px;
+	margin: 0;
+	padding: 20px 0px 20px 20px;
+}
+#agentFamily img, #agentRalph img, #agentStacey img, #agentDavid img {
+	width: 500px;
+	float: left;
+	padding: 0px 20px;
+	margin: 0px;
+}
+#agentFamily img {
+	padding: 0px 20px 0px 0px;
+}
+#agentRalph img:first-child, #agentStacey img:first-child, #agentDavid img:first-child {
+	width: 200px;
+}
+#agentFamily h2, #agentRalph h2, #agentStacey h2, #agentDavid h2 {
+	color: #6884d5;
+	font-size: 3em;
+	float: left;
+	margin: 20px 20px 0px -60px;
+}
+#agentFamily h3, #agentRalph h3, #agentStacey h3, #agentDavid h3 {
+	color: #6884d5;
+	font-size: 1.5em;
+	width: 65%;
+	float: left;
+	margin: 20px 0px 0px 20px;
+}
+#welcomeFamily {
+	position: absolute;
+	bottom: 10%;
+	left: 1%;
+	width: 590px;
+	color: #fff;
+	background-color: #365ac3;
+	font-size: 1.1em;
+	padding: 7px 20px;
+	opacity: .9;
+	font-weight: 600;
+}
+#welcomeFamily p::first-letter {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+#meetAgentRalph, #backToFamily, #backToRalph, #meetAgentStacey, #backToStacey, #meetAgentDavid, #backToFamily2 {
+	background-color: #365ac3;
+		position: absolute;
+		width: 130px;
+		top: 50%;
+		font-size: 1.3em;
+		color: #fff;
+		padding: 10px 20px;
+		margin: 0px;
+		text-decoration: underline;
+		border: 6px solid #fff;
+}
+
+em {
+	font-weight: 600;
+}
+#meetAgentRalph { right: 75%; border-right: none }
+#backToFamily { left: 25%; border-left: none }
+#meetAgentStacey { right: 50%; border-right: none }
+#backToRalph {left: 50%; border-left: none }
+#meetAgentDavid { right: 25%; border-right: none }
+#backToStacey {left: 75%; border-left: none }
+#backToFamily2 { right: 0%; border-right: none }
+#meetRalphContainer #meetStaceyContainer, #meetDavidContainer {
+	position: absolute;
+	top: 0px;
+	color: #fff;
+	padding: 0px;
+	margin: 0px 10%;
+	font-size: 1em;
+	background-color: #fff;
+}
+/*#meetRalphContainer img,  #meetStaceyContainer img , #meetDavidContainer img {
+width: 300px;
+float: left;
+padding: 0px;
+margin: 0px;
+}*/
+#ourListingsHead, #contactUsHead {
+	position: absolute;
+	top:0;
+	opacity: .9;
+	background-color: #fff;
+	width: auto;
+	height: 80px;
+	margin: 0;
+	padding: 20px 20px 20px 20px;
+}
+#ourListingsHead img, #contactUsHead img {
+	width: 500px;
+	float: left;
+}
+#ourListingsHead h2, #contactUsHead h2 {
+	color: #6884d5;
+	font-size: 3em;
+	float: left;
+	margin: 20px 0px 0px -60px;
+	font-weight: 300;	
+}
+
+/* Side bar menu list */
+#menu li {
+	display: block;
+	width: 130px;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px;
+	color: #fff;
+	float: right;
+	background: #365ac3;
+	opacity: .8;
+	font-size: 1.2em;
+	font-weight: bolder;
+	border-top: 6px solid #fff;
+	border-bottom: 6px solid #fff;
+	border-left: 6px solid #fff;
+	-webkit-border-top: 6px solid #fff;
+	-webkit-border-bottom: 6px solid #fff;
+	-webkit-border-left: 6px solid #fff;
+}
+#menu li.active{
+	background: #365ac3;
+	opacity: 1;
+	color: #fff;
+		width: 180px;
+}
+#menu li a{
+	text-decoration:none;
+	color: #fff;
+}
+#menu li.active a:hover{
+	color: #fff;
+}
+#menu li:hover{
+	background: #365ac3;
+	opacity: 1;
+	color: #fff;
+		width: 180px;
+}
+#menu li a, #menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top: 10; 
+	right:0;
+	z-index: 70;
+	padding: 0;
+	margin:0;
+	width: 200px;
+}
+
+h1 {
+	color: #fff;
+background-color: #000;
+}
+
+a:hover { 
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
