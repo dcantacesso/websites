@@ -1,7 +1,15 @@
-$('.navbar-fixed-top .navbar-header button').on("click", function(){
+$('.dropdown').hover( function(){
 	//var dropdown = $('.navbar-fixed-top .navbar-collapse .dropdown .dropdown-menu li');
 //	if ($('.navbar-fixed-top .navbar-collapse .dropdown .dropdown-menu li').hasClass('dropdown')) {
-		$('.navbar-fixed-top bs-example-navbar-collapse-1 ul li').eq(2).toggleClass('open');
+		$('.dropdown').toggleClass('open');
 	// }; 
 });
+
+$('.dropdown').on("click", function(event){
+	//var dropdown = $('.navbar-fixed-top .navbar-collapse .dropdown .dropdown-menu li');
+//	if ($('.navbar-fixed-top .navbar-collapse .dropdown .dropdown-menu li').hasClass('dropdown')) {
+		event.preventDefault;
+	// }; 
+});
+
 
